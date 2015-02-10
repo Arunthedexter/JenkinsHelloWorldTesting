@@ -22,29 +22,30 @@ public class helloWorld extends JFrame
 		
 		//panel
 		JPanel panel = new JPanel();
-		panel.setLayout(new GridBagLayout());
-		GridBagConstraints c= new GridBagConstraints();
-		
+		panel.setLayout(new BorderLayout());
 		setContentPane(panel);
+		
 		//JLabel1
 		JLabel label1 = new JLabel (counter+"!!");
+		panel.add(label1, BorderLayout.CENTER);
 		label1.setForeground(Color.RED);
 		label1.setFont(label1.getFont().deriveFont(100.0f));
 		
 		//Jlabel2
 		JLabel songTitle = new JLabel ("\"It's My Life\"");
+		panel.add(songTitle, BorderLayout.SOUTH);
 		songTitle.setForeground(Color.RED);
 		songTitle.setFont(songTitle.getFont().deriveFont(50.0f));
 		songTitle.setHorizontalAlignment( SwingConstants.CENTER );
 		
 		//GridBag layout properties
-		c.fill=GridBagConstraints.HORIZONTAL;
+		/*c.fill=GridBagConstraints.HORIZONTAL;
 		c.gridx = 0;
 		c.gridy = 0;
 		panel.add(label1,c);
 		//add component to JFrame
 		c.gridy = 1;
-		panel.add(songTitle,c);
+		panel.add(songTitle,c);*/
 		
 		while(state==true)
 		{
@@ -102,9 +103,5 @@ public class helloWorld extends JFrame
 
 	}
 	
-	public static void main ( String [] args )
-	{
-		helloWorld helloWorldGUI = new helloWorld();
-		
-	}	
+	
 }
