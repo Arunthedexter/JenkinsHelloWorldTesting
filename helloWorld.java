@@ -30,6 +30,7 @@ public class helloWorld extends JFrame
 		panel.add(label1, BorderLayout.CENTER);
 		label1.setForeground(Color.RED);
 		label1.setFont(label1.getFont().deriveFont(100.0f));
+		label1.setHorizontalAlignment( SwingConstants.CENTER );
 		
 		//Jlabel2
 		JLabel songTitle = new JLabel ("\"It's My Life\"");
@@ -37,6 +38,7 @@ public class helloWorld extends JFrame
 		songTitle.setForeground(Color.RED);
 		songTitle.setFont(songTitle.getFont().deriveFont(50.0f));
 		songTitle.setHorizontalAlignment( SwingConstants.CENTER );
+		
 		
 		//GridBag layout properties
 		/*c.fill=GridBagConstraints.HORIZONTAL;
