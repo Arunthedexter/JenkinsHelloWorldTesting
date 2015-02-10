@@ -25,6 +25,13 @@ public class helloWorld extends JFrame
 		panel.setLayout(new BorderLayout());
 		setContentPane(panel);
 		
+		
+		//panel2
+		JPanel panel2 = new JPanel();
+		panel2.setLayout(new FlowLayout());
+		
+		panel.add(panel2, BorderLayout.NORTH);
+		
 		//JLabel1
 		JLabel label1 = new JLabel (counter+"!!");
 		panel.add(label1, BorderLayout.CENTER);
