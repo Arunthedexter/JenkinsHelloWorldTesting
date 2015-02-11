@@ -26,11 +26,22 @@ public class helloWorld extends JFrame
 		setContentPane(panel);
 		
 		
-		//panel2
+		//panel2 
 		JPanel panel2 = new JPanel();
 		panel2.setLayout(new FlowLayout());
 		
-		panel.add(panel2, BorderLayout.NORTH);
+		panel.add(panel2, BorderLayout.NORTH);//adds the 2nd panel inside the main panel
+		
+		//JLabelTESTFORMENU
+		JLabel labelTest = new JLabel ("TEST");
+		labelTest.setFont(labelTest.getFont().deriveFont(100.0f));
+		
+		JLabel labelTest2 = new JLabel ("TEST2");
+		labelTest2.setFont(labelTest.getFont().deriveFont(100.0f));
+		
+		//adds test labels to the second panel
+		panel2.add( labelTest);
+		panel2.add( labelTest2);
 		
 		//JLabel1
 		JLabel label1 = new JLabel (counter+"!!");
