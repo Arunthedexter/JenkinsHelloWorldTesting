@@ -39,6 +39,21 @@ public class helloWorld extends JFrame
 		JLabel labelTest2 = new JLabel ("TEST2");
 		labelTest2.setFont(labelTest.getFont().deriveFont(100.0f));
 		
+		// Create the menu bar
+    	JMenuBar menuBar = new JMenuBar();
+
+    	// Create a menu
+    	JMenu menu = new JMenu("Menu Label");
+    	menuBar.add(menu);
+
+    	// Create a menu item
+    	JMenuItem item = new JMenuItem("Item Label");
+    	//item.addActionListener(actionListener);
+    	menu.add(item);
+
+    	// Install the menu bar in the frame
+    	setJMenuBar(menuBar);
+		
 		//adds test labels to the second panel
 		panel2.add( labelTest);
 		panel2.add( labelTest2);
@@ -58,16 +73,7 @@ public class helloWorld extends JFrame
 		songTitle.setHorizontalAlignment( SwingConstants.CENTER );
 		
 		
-		//GridBag layout properties
-		/*c.fill=GridBagConstraints.HORIZONTAL;
-		c.gridx = 0;
-		c.gridy = 0;
-		panel.add(label1,c);
-		//add component to JFrame
-		c.gridy = 1;
-		panel.add(songTitle,c);*/
-		
-		while(state==true)
+		/*while(state==true)
 		{
 			label1.setText(counter+"!!");
 			if (color_change==0)
@@ -116,12 +122,12 @@ public class helloWorld extends JFrame
 				songTitle.setForeground(Color.BLACK);
 			}
 			counter--;
-		}
+		}*/
 	
 		
 		
 
 	}
 	
-	
+
 }
